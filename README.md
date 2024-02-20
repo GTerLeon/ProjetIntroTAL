@@ -1,6 +1,6 @@
 # DEFT2013 Tâche 2 : NOMEQUIPE (optionnel)
 
-CHEBBAH Djamel - TER Léon
+CHEBBAH Djamel- TER Léon
 
 ## Description de la tâche
 

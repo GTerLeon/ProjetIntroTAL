@@ -1,6 +1,6 @@
 # DEFT2013 Tâche 2 : NOMEQUIPE (optionnel)
 
-NOM Prenom - NOM Prenom
+CHEBBAH Djamel - NOM Prenom
 
 ## Description de la tâche
 

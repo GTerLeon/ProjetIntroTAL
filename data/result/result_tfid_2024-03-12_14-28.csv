@@ -1,0 +1,7 @@
+                precision    recall  f1-score   support
+       Dessert       0.93      0.92      0.92       407
+        Entrée       0.68      0.63      0.66       337
+Plat principal       0.81      0.84      0.82       644
+      accuracy                           0.81      1388
+     macro avg       0.81      0.80      0.80      1388
+  weighted avg       0.81      0.81      0.81      1388

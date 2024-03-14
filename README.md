@@ -47,16 +47,18 @@ CHEBBAH Djamel, TER Léon
 | Word2Vec   |  63.8 (provisoire)| 
 | Modelcamembert   |   |
 
+
+
 ### Analyse de résultats
 	
-	Des méthodes implémentées TF-IDF obtiennent des résultats significativement supérieurs à Word2Vec, qui est la méthode la moins performante.
-	Regardons plus en détail la méthode avec le meilleur f1_score moyen, TF-IDF:
-	![Matrice de confusion pour TF IDF](../data/matrice_confusion_tfidf.png)
+Des méthodes implémentées TF-IDF obtiennent des résultats significativement supérieurs à Word2Vec, qui est la méthode la moins performante.
+Regardons plus en détail la méthode avec le meilleur f1_score moyen, TF-IDF:
+![Matrice de confusion pour TF IDF](matrice_confusion_tfidf.png)
 
-	Il est à remarquer que les desserts sont les recettes les mieux prédites (92%), suivis des plats (82%) et enfin des entrées (66%).
-	Pour les desserts, il est possible que ce soit des recettes utilisant des expressions/ingrédients complètement différents des plats/entrées, ce qui expliquerait que le modèle n'a prédit que très rarement autre chose que des desserts.
-	D'autre part, les recettes les plus prédites sont classifiées comme "Plat principal". Cela peut s'expliquer par le grand nombre de "Plat principal" dans les fichiers, expliquant ainsi un plus grand nombre de "Plat principal" prédits. Finalement, la similarité des expressions/ingrédients entre "Entrée" et "Plat principal" pourrait être une raison pour laquelle le modèle prédit autant de fois qu'une recette est un "Plat principal" alors qu'elle devrait être une "Entrée".
+Il est à remarquer que les desserts sont les recettes les mieux prédites (92%), suivis des plats (82%) et enfin des entrées (66%).
+Pour les desserts, il est possible que ce soit des recettes utilisant des expressions/ingrédients complètement différents des plats/entrées, ce qui expliquerait que le modèle n'a prédit que très rarement autre chose que des desserts.
+D'autre part, les recettes les plus prédites sont classifiées comme "Plat principal". Cela peut s'expliquer par le grand nombre de "Plat principal" dans les fichiers, expliquant ainsi un plus grand nombre de "Plat principal" prédits. Finalement, la similarité des expressions/ingrédients entre "Entrée" et "Plat principal" pourrait être une raison pour laquelle le modèle prédit autant de fois qu'une recette est un "Plat principal" alors qu'elle devrait être une "Entrée".
 
-	Des méthodes employées, Word2Vec est celle qui rend les moins bons résultats. Cela pourrait s'expliquer par la nature même de Word2vec et des word embeddings où il est nécessaire d'avoir des jeux de données conséquents.
+Des méthodes employées, Word2Vec est celle qui rend les moins bons résultats. Cela pourrait s'expliquer par la nature même de Word2vec et des word embeddings où il est nécessaire d'avoir des jeux de données conséquents.
 
-	En comparant les méthodes, on se rend compte qu'une approche avec TF-IDF, par principe moins complexe que les autres, est tout à fait adéquate pour obtenir des résultats optimaux.
+En comparant les méthodes, on se rend compte qu'une approche avec TF-IDF, par principe moins complexe que les autres, est tout à fait adéquate pour obtenir des résultats optimaux.
